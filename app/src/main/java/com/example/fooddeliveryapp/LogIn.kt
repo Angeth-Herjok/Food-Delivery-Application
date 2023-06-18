@@ -16,7 +16,7 @@ class LogIn : AppCompatActivity() {
 override fun onResume() {
     super.onResume()
     setContentView(binding.root)
-    binding.tvLogin.setOnClickListener {
+    binding.tvbutton6.setOnClickListener {
         val intent= Intent(this,SignUp::class.java)
         startActivity(intent)
     }

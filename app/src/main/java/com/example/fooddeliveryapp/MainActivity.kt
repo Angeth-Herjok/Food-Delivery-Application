@@ -3,6 +3,8 @@ package com.example.fooddeliveryapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import androidx.core.os.postDelayed
 import com.example.fooddeliveryapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -11,14 +13,23 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+        supportActionBar?.hide()
+        Handler().postDelayed({
+                              val intent=Intent(this@MainActivity,LogIn::class.java)
+            startActivity(intent)
+        },3000)
     }
 
     override fun onResume() {
         super.onResume()
         setContentView(binding.root)
-        binding.tvButton.setOnClickListener {
+        binding.tvTextView.setOnClickListener {
             val intent=Intent(this,LogIn::class.java)
             startActivity(intent)
+
+
         }
 
     }

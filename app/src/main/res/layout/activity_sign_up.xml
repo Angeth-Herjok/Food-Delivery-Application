@@ -3,65 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:alwaysDrawnWithCache="false"
     tools:context=".MainActivity">
-
-    <ImageView
-        android:id="@+id/ivImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="128dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pizzadel" />
-
-    <TextView
-        android:id="@+id/tvRegister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="140dp"
-        android:text="Registration"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivImage" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilName"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvRegister"
-        app:startIconDrawable="@drawable/baseline_person_add_alt_1_24">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Name"
-            android:textSize="24sp" />
-    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilEmail"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilName"
+        app:layout_constraintTop_toBottomOf="@+id/tvCreate"
         app:startIconDrawable="@drawable/baseline_email_24">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -74,7 +29,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilPassword"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="15dp"
@@ -94,38 +49,110 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/tvSignUp"
-        android:layout_width="360dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="177dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="177dp"
-        android:text="Already have an account? SignUp"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="24sp"
+        android:id="@+id/tvfood1"
+        android:layout_width="245dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="96dp"
+        android:text="FoodMagic"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#2336A3"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilPhoneNumber" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCreate"
+        android:layout_width="239dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="Create your Account"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvfood1" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilPhoneNumber"
-        android:layout_width="409dp"
+        android:id="@+id/tvConfirmPassword"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tilPassword"
-        app:startIconDrawable="@drawable/baseline_local_phone_24">
+        app:startIconDrawable="@drawable/baseline_lock_open_24">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etPhoneNumber"
+            android:id="@+id/etConfirmPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Phone Number"
+            android:hint="Confirm Password"
             android:textSize="24sp" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/tvbutton2"
+        android:layout_width="314dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="#3F51B5"
+        android:text="SIGN UP"
+        android:textColor="#E6FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvConfirmPassword" />
+
+    <TextView
+        android:id="@+id/tvtTextView3"
+        android:layout_width="204dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="16dp"
+        android:text="-Or Sign Up with-"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvbutton2" />
+
+    <ImageView
+        android:id="@+id/ivGoogle"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivTwitter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvtTextView3"
+        app:srcCompat="@drawable/google" />
+
+    <ImageView
+        android:id="@+id/ivTwitter"
+        android:layout_width="65dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/ivGoogle"
+        app:layout_constraintTop_toBottomOf="@+id/tvtTextView3"
+        app:srcCompat="@drawable/twitter" />
+
+    <ImageView
+        android:id="@+id/ivFacebook"
+        android:layout_width="76dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivTwitter"
+        app:layout_constraintTop_toBottomOf="@+id/tvtTextView3"
+        app:srcCompat="@drawable/fb" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

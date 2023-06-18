@@ -4,81 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#364fc7"
     tools:context=".MainActivity">
-
-    <ImageView
-        android:id="@+id/ivImage"
-        android:layout_width="358dp"
-        android:layout_height="294dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="117dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="320dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pizzaimage" />
 
     <TextView
         android:id="@+id/tvName"
-        android:layout_width="299dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="74dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="21dp"
-        android:text="Food Delivery App"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/ivImage"
+        android:layout_width="244dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="74dp"
+        android:text="FoodMagic"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvAbout"
+    <ImageView
+        android:id="@+id/ivImageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="102dp"
-        android:layout_marginTop="62dp"
-        android:layout_marginEnd="102dp"
-        android:layout_marginBottom="23dp"
-        android:text="Pick The Best Food"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/tvText"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="79dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivImage" />
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        app:srcCompat="@drawable/fooddelicery" />
 
     <TextView
-        android:id="@+id/tvText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginBottom="40dp"
-        android:text="We delivery the best food with free delivery."
-        android:textColor="@color/black"
+        android:id="@+id/tvTextView"
+        android:layout_width="288dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:text="Less Talk, Eat More."
+        android:textColor="#F3FFFFFF"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/tvButton"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAbout" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTextView3" />
 
-    <Button
-        android:id="@+id/tvButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="123dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="123dp"
-        android:layout_marginBottom="100dp"
-        android:text="Order Now"
+    <TextView
+        android:id="@+id/tvTextView3"
+        android:layout_width="205dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="96dp"
+        android:text="Food Delivery App"
+        android:textColor="#F2FFFFFF"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvText" />
+        app:layout_constraintTop_toBottomOf="@+id/ivImageView2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
