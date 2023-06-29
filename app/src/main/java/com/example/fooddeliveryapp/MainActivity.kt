@@ -17,22 +17,22 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
         Handler().postDelayed({
-                              val intent=Intent(this@MainActivity,LogIn::class.java)
+                              val intent=Intent(this@MainActivity,LandingPage::class.java)
             startActivity(intent)
         },3000)
     }
 
-    override fun onResume() {
-        super.onResume()
-        setContentView(binding.root)
-        binding.tvTextView.setOnClickListener {
-            val intent=Intent(this,LogIn::class.java)
-            startActivity(intent)
-
-
-        }
-
-    }
+//    override fun onResume() {
+//        super.onResume()
+//        setContentView(binding.root)
+//        binding.tvName.setOnClickListener {
+//            val intent=Intent(this,LandingPage::class.java)
+//            startActivity(intent)
+//
+//
+//        }
+//
+//    }
    
 
 }

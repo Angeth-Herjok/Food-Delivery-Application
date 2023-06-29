@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reviews">
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="89dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="314dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/tvReviews"
+        android:layout_width="157dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="148dp"
+        android:text="Reviews"
+        android:textColor="#090000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivArrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFive"
+        android:layout_width="54dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="30dp"
+        android:text="6.4"
+        android:textColor="#070606"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvReviews" />
+
+    <ImageView
+        android:id="@+id/ivStar"
+        android:layout_width="45dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivStar1"
+        app:layout_constraintStart_toEndOf="@+id/tvFive"
+        app:layout_constraintTop_toBottomOf="@+id/tvReviews"
+        app:srcCompat="@drawable/baseline_star_24" />
+
+    <ImageView
+        android:id="@+id/ivStar1"
+        android:layout_width="43dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivStar2"
+        app:layout_constraintStart_toEndOf="@+id/ivStar"
+        app:layout_constraintTop_toBottomOf="@+id/tvReviews"
+        app:srcCompat="@drawable/baseline_star_24" />
+
+    <ImageView
+        android:id="@+id/ivStar2"
+        android:layout_width="43dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivStar3"
+        app:layout_constraintStart_toEndOf="@+id/ivStar1"
+        app:layout_constraintTop_toBottomOf="@+id/tvReviews"
+        app:srcCompat="@drawable/baseline_star_24" />
+
+    <ImageView
+        android:id="@+id/ivStar3"
+        android:layout_width="45dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivStar2"
+        app:layout_constraintTop_toTopOf="@+id/ivStar1"
+        app:srcCompat="@drawable/baseline_star_24" />
+
+    <TextView
+        android:id="@+id/tvSeven"
+        android:layout_width="244dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="90dp"
+        android:text="170 Reviews"
+        android:textColor="#0B0404"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivStar2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

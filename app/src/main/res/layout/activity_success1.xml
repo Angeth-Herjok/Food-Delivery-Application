@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Success1"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="103dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="292dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <ImageView
+        android:id="@+id/ivGirl"
+        android:layout_width="304dp"
+        android:layout_height="219dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="54dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivArrow"
+        app:srcCompat="@drawable/img_11" />
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="316dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="44dp"
+        android:text="Payment was unsuccessful"
+        android:textAllCaps="false"
+        android:textColor="#ED4611"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivGirl" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="311dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="54dp"
+        android:text="Something went wrong couldn't process your payment try again"
+        android:textColor="#090909"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvtitle" />
+
+    <Button
+        android:id="@+id/btnTry"
+        android:layout_width="311dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="49dp"
+        android:background="#DC3B09"
+        android:text="Try again"
+        android:textAllCaps="false"
+        android:textColor="#FDF6F6"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMessage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,69 @@
         android:theme="@style/Theme.FoodDeliveryApp"
         tools:targetApi="31">
         <activity
+            android:name=".Menu2"
+            android:exported="false" />
+        <activity
+            android:name=".Reviews"
+            android:exported="false" />
+        <activity
+            android:name=".Track"
+            android:exported="false" />
+        <activity
+            android:name=".Unsuccessful"
+            android:exported="false" />
+        <activity
+            android:name=".Success1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2success"
+            android:exported="false" />
+        <activity
+            android:name=".Success"
+            android:exported="false" />
+        <activity
+            android:name=".unsuccessful"
+            android:exported="false" />
+        <activity
+            android:name=".TryPayment"
+            android:exported="false" />
+        <activity
+            android:name=".Trypayment"
+            android:exported="false" />
+        <activity
+            android:name=".Try"
+            android:exported="false" />
+        <activity
+            android:name=".Paypal"
+            android:exported="false" />
+        <activity
+            android:name=".Mastercard"
+            android:exported="false" />
+        <activity
+            android:name=".Payment"
+            android:exported="false" />
+        <activity
+            android:name=".Map"
+            android:exported="false" />
+        <activity
+            android:name=".Cart"
+            android:exported="false" />
+        <activity
+            android:name=".Burger"
+            android:exported="false" />
+        <activity
+            android:name=".Menu"
+            android:exported="false" />
+        <activity
+            android:name=".LandingPage"
+            android:exported="false" />
+        <activity
+            android:name=".welcome"
+            android:exported="false" />
+        <activity
             android:name=".SignUp"
             android:exported="false" />
         <activity
@@ -20,8 +83,8 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:label="Main"
-            android:exported="true">
+            android:exported="true"
+            android:label="Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F2F6"
+    tools:context=".welcome">
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="264dp"
+        android:layout_height="53dp"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:drawableStart="@drawable/baseline_search_24"
+        android:text="Search Food"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="357dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="29dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearch"
+        app:srcCompat="@drawable/img_2" />
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="218dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="169dp"
+        android:text="Magic Restaurant"
+        android:textColor="#070707"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivImage" />
+
+    <TextView
+        android:id="@+id/tvTextView2"
+        android:layout_width="263dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="132dp"
+        android:text="Magic cuisine fast food"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvText" />
+
+    <ImageView
+        android:id="@+id/tvLocation"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvAmount"
+        app:layout_constraintStart_toEndOf="@+id/tvText"
+        app:layout_constraintTop_toBottomOf="@+id/ivImage"
+        app:srcCompat="@drawable/baseline_add_location_alt_24" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="57dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:text="240"
+        android:textColor="#8C1212"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvLocation"
+        app:layout_constraintTop_toBottomOf="@+id/ivImage" />
+
+    <ImageView
+        android:id="@+id/ivStar1"
+        android:layout_width="37dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/tvTextView2"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocation"
+        app:srcCompat="@drawable/baseline_star_24" />
+
+    <ImageView
+        android:id="@+id/ivStar"
+        android:layout_width="39dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivStar2"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmount"
+        app:srcCompat="@drawable/baseline_star_24" />
+
+    <ImageView
+        android:id="@+id/ivStar2"
+        android:layout_width="34dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivStar"
+        app:layout_constraintStart_toEndOf="@+id/ivStar1"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocation"
+        app:srcCompat="@drawable/baseline_star_24" />
+
+    <TextView
+        android:id="@+id/tvTextView6"
+        android:layout_width="218dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="5dp"
+        android:text="Explore Categories"
+        android:textColor="#00030E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextView2" />
+
+    <TextView
+        android:id="@+id/tvTextView7"
+        android:layout_width="139dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="23dp"
+        android:text="View More"
+        android:textColor="#050101"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTextView6"
+        app:layout_constraintTop_toBottomOf="@+id/ivStar1" />
+
+    <ImageView
+        android:id="@+id/ivImageView8"
+        android:layout_width="90dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextView6"
+        app:srcCompat="@drawable/burger" />
+
+    <TextView
+        android:id="@+id/tvTextView8"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="11dp"
+        android:text="Burger"
+        android:textColor="#090000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivImageView8" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="51dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivImageView10"
+        app:layout_constraintStart_toEndOf="@+id/tvTextView8"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextView6"
+        app:srcCompat="@drawable/pizza" />
+
+    <TextView
+        android:id="@+id/tvTextView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="30dp"
+        android:text="Pizza"
+        android:textColor="#070000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvTextView10"
+        app:layout_constraintStart_toEndOf="@+id/tvTextView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <ImageView
+        android:id="@+id/ivImageView10"
+        android:layout_width="91dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextView6"
+        app:srcCompat="@drawable/eggs" />
+
+    <TextView
+        android:id="@+id/tvTextView10"
+        android:layout_width="70dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="103dp"
+        android:text="Snacks"
+        android:textColor="#050505"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/ivImageView10" />
+
+    <ImageView
+        android:id="@+id/tvImageView11"
+        android:layout_width="64dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTextView10"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextView7"
+        app:srcCompat="@drawable/drinks" />
+
+    <TextView
+        android:id="@+id/tvTextView11"
+        android:layout_width="64dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="12dp"
+        android:text="Drinks"
+        android:textColor="#070000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTextView10"
+        app:layout_constraintTop_toBottomOf="@+id/tvImageView11" />
+
+    <TextView
+        android:id="@+id/tvTextView12"
+        android:layout_width="194dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="190dp"
+        android:text="Recommended"
+        android:textColor="#090000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextView8" />
+
+    <ImageView
+        android:id="@+id/ivimageView12"
+        android:layout_width="163dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextView12"
+        app:srcCompat="@drawable/img_1" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="176dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="58dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivimageView12"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextView12"
+        app:srcCompat="@drawable/img_3" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="128dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="70dp"
+        android:text="Magic"
+        android:textColor="#040303"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivimageView12" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="133dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="71dp"
+        android:text="Fast food burger"
+        android:textColor="#070707"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="113dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="74dp"
+        android:text="Magic"
+        android:textColor="#020202"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="162dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="39dp"
+        android:text="Fast food burger"
+        android:textColor="#050505"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="64dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <ImageView
+        android:id="@+id/ivArrow1"
+        android:layout_width="47dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSearch"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

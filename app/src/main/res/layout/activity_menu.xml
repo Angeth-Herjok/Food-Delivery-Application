@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="160dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="185dp"
+        android:text="Menu"
+        android:textColor="#3F51B5"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivArrow" />
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="84dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="200dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivArrow1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <Button
+        android:id="@+id/btnBurger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#97140A"
+        android:text="Burger"
+        android:textColor="#FCFFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <Button
+        android:id="@+id/btnPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:background="#F5FFFFFF"
+        android:text="Pizza"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnMeals"
+        app:layout_constraintStart_toEndOf="@+id/btnBurger"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <Button
+        android:id="@+id/btnMeals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:background="#F2FFFFFF"
+        android:text="Meals"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnDishes"
+        app:layout_constraintStart_toEndOf="@+id/btnPizza"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <Button
+        android:id="@+id/btnDishes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#F2FFFFFF"
+        android:text="Dishes"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMeals"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <ImageView
+        android:id="@+id/ivBurger1"
+        android:layout_width="101dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBurger"
+        app:srcCompat="@drawable/burger" />
+
+    <ImageView
+        android:id="@+id/ivBurger2"
+        android:layout_width="97dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBurger1"
+        app:srcCompat="@drawable/burger" />
+
+    <ImageView
+        android:id="@+id/ivBurger3"
+        android:layout_width="97dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBurger2"
+        app:srcCompat="@drawable/burger" />
+
+    <ImageView
+        android:id="@+id/ivBurger4"
+        android:layout_width="101dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBurger3"
+        app:srcCompat="@drawable/burger" />
+
+    <TextView
+        android:id="@+id/tvTextView2"
+        android:layout_width="159dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="33dp"
+        android:text="Cheese Burger"
+        android:textColor="#050505"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ivLove1"
+        app:layout_constraintStart_toEndOf="@+id/ivBurger1"
+        app:layout_constraintTop_toTopOf="@+id/ivBurger1" />
+
+    <TextView
+        android:id="@+id/tvTextView3"
+        android:layout_width="153dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="70dp"
+        android:text="Beef Burger"
+        android:textColor="#040303"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ivLove2"
+        app:layout_constraintStart_toEndOf="@+id/ivBurger2"
+        app:layout_constraintTop_toTopOf="@+id/ivBurger2" />
+
+    <TextView
+        android:id="@+id/tvTextView4"
+        android:layout_width="162dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="21dp"
+        android:text="Turkey Burger"
+        android:textColor="#090808"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ivLove3"
+        app:layout_constraintStart_toEndOf="@+id/ivBurger3"
+        app:layout_constraintTop_toTopOf="@+id/ivBurger3" />
+
+    <TextView
+        android:id="@+id/tvTextView5"
+        android:layout_width="166dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="30dp"
+        android:text="Veggie Burger"
+        android:textColor="#070707"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ivLove4"
+        app:layout_constraintStart_toEndOf="@+id/ivBurger4"
+        app:layout_constraintTop_toTopOf="@+id/ivBurger4" />
+
+    <TextView
+        android:id="@+id/tvTextView7"
+        android:layout_width="222dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:text="beef mince $ beef bans"
+        android:textColor="#0C0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivBurger2"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextView3" />
+
+    <ImageView
+        android:id="@+id/ivLove1"
+        android:layout_width="33dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTextView2"
+        app:layout_constraintTop_toTopOf="@+id/tvTextView2"
+        app:srcCompat="@drawable/baseline_favorite_24" />
+
+    <ImageView
+        android:id="@+id/ivLove2"
+        android:layout_width="31dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivStar2"
+        app:layout_constraintTop_toTopOf="@+id/tvTextView3"
+        app:srcCompat="@drawable/baseline_favorite_24" />
+
+    <ImageView
+        android:id="@+id/ivLove3"
+        android:layout_width="42dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTextView4"
+        app:layout_constraintTop_toTopOf="@+id/tvTextView4"
+        app:srcCompat="@drawable/baseline_favorite_24" />
+
+    <ImageView
+        android:id="@+id/ivLove4"
+        android:layout_width="51dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="39dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTextView5"
+        app:layout_constraintTop_toTopOf="@+id/tvTextView5"
+        app:srcCompat="@drawable/baseline_favorite_24" />
+
+    <TextView
+        android:id="@+id/tvTextView8"
+        android:layout_width="216dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="19dp"
+        android:text="beef mince $ beef bans"
+        android:textColor="#070101"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivBurger1"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextView2" />
+
+    <TextView
+        android:id="@+id/tvTextView9"
+        android:layout_width="225dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="5dp"
+        android:text="beef mince $ beef bans"
+        android:textColor="#0C0404"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivBurger3"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextView4" />
+
+    <TextView
+        android:id="@+id/tvTextView10"
+        android:layout_width="215dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="beef mince $ beef bans"
+        android:textColor="#070809"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivBurger4"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextView5" />
+
+    <ImageView
+        android:id="@+id/ivStar1"
+        android:layout_width="41dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvTextView11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextView8"
+        app:srcCompat="@drawable/baseline_star_24" />
+
+    <TextView
+        android:id="@+id/tvTextView11"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="20dp"
+        android:text="1,500"
+        android:textColor="#070000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ivStar2"
+        app:layout_constraintStart_toEndOf="@+id/ivStar1"
+        app:layout_constraintTop_toTopOf="@+id/ivStar1" />
+
+    <ImageView
+        android:id="@+id/ivStar2"
+        android:layout_width="37dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTextView11"
+        app:layout_constraintTop_toTopOf="@+id/tvTextView11"
+        app:srcCompat="@drawable/baseline_star_24" />
+
+    <ImageView
+        android:id="@+id/ivStar3"
+        android:layout_width="35dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvTextView12"
+        app:layout_constraintStart_toEndOf="@+id/ivBurger2"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextView7"
+        app:srcCompat="@drawable/baseline_star_24" />
+
+    <TextView
+        android:id="@+id/tvTextView12"
+        android:layout_width="107dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="20dp"
+        android:text="1,800"
+        android:textColor="#850A0A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ivStar4"
+        app:layout_constraintStart_toEndOf="@+id/ivStar3"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextView7" />
+
+    <ImageView
+        android:id="@+id/ivStar4"
+        android:layout_width="31dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTextView12"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextView7"
+        app:srcCompat="@drawable/baseline_star_24" />
+
+    <ImageView
+        android:id="@+id/ivStar5"
+        android:layout_width="33dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvTextView14"
+        app:layout_constraintStart_toEndOf="@+id/ivBurger3"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextView9"
+        app:srcCompat="@drawable/baseline_star_24" />
+
+    <TextView
+        android:id="@+id/tvTextView14"
+        android:layout_width="115dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="31dp"
+        android:text="2,000"
+        android:textColor="#610505"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ivStar6"
+        app:layout_constraintStart_toEndOf="@+id/ivStar5"
+        app:layout_constraintTop_toTopOf="@+id/ivStar5" />
+
+    <ImageView
+        android:id="@+id/ivStar6"
+        android:layout_width="37dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTextView14"
+        app:layout_constraintTop_toTopOf="@+id/tvTextView14"
+        app:srcCompat="@drawable/baseline_star_24" />
+
+    <TextView
+        android:id="@+id/tvTextView18"
+        android:layout_width="95dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="42dp"
+        android:text="2,500"
+        android:textColor="#8F0B0B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ivStar8"
+        app:layout_constraintStart_toEndOf="@+id/ivStar7"
+        app:layout_constraintTop_toTopOf="@+id/ivStar7" />
+
+    <ImageView
+        android:id="@+id/ivStar7"
+        android:layout_width="28dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvTextView18"
+        app:layout_constraintStart_toEndOf="@+id/ivBurger4"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextView10"
+        app:srcCompat="@drawable/baseline_star_24" />
+
+    <ImageView
+        android:id="@+id/ivStar8"
+        android:layout_width="33dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTextView18"
+        app:layout_constraintTop_toTopOf="@+id/tvTextView18"
+        app:srcCompat="@drawable/baseline_star_24" />
+
+    <ImageView
+        android:id="@+id/ivArrow1"
+        android:layout_width="91dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
