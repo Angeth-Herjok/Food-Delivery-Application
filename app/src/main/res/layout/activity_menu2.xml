@@ -8,19 +8,203 @@
 
     <Button
         android:id="@+id/btnSearch"
-        android:layout_width="305dp"
-        android:layout_height="62dp"
+        android:layout_width="229dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="42dp"
         android:background="#F8FDFCFC"
         android:text="Search Food"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="35dp" />
+        android:textColor="#070707"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/ivViewbar"
-        android:layout_width="73dp"
-        android:layout_height="56dp"
-        app:srcCompat="@drawable/baseline_view_headline_24"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="41dp" />
+        android:id="@+id/ivBurger"
+        android:layout_width="328dp"
+        android:layout_height="171dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearch"
+        app:srcCompat="@drawable/img_2" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="312dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="1dp"
+        android:text="Explore Categories"
+        android:textColor="#020202"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/ivBurger" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="99dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMessage"
+        app:srcCompat="@drawable/burger" />
+
+    <TextView
+        android:id="@+id/tvBurger"
+        android:layout_width="97dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="9dp"
+        android:text="Burger"
+        android:textColor="#020202"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvChips"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="96dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvDrinks"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/tvMessage"
+        app:srcCompat="@drawable/img_4" />
+
+    <TextView
+        android:id="@+id/tvChips"
+        android:layout_width="92dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="20dp"
+        android:text="Snacks"
+        android:textColor="#050505"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvDrink"
+        app:layout_constraintStart_toEndOf="@+id/tvBurger"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <ImageView
+        android:id="@+id/tvDrinks"
+        android:layout_width="111dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/tvMessage"
+        app:srcCompat="@drawable/img_5" />
+
+    <TextView
+        android:id="@+id/tvDrink"
+        android:layout_width="89dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="35dp"
+        android:text="Drinks"
+        android:textColor="#050101"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvChips"
+        app:layout_constraintTop_toBottomOf="@+id/tvDrinks" />
+
+    <TextView
+        android:id="@+id/tvRecommend"
+        android:layout_width="249dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="121dp"
+        android:text="Recommended"
+        android:textColor="#050505"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvChips" />
+
+    <ImageView
+        android:id="@+id/ivBurger2"
+        android:layout_width="140dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="61dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivBurger3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecommend"
+        app:srcCompat="@drawable/burger" />
+
+    <TextView
+        android:id="@+id/tvBugername"
+        android:layout_width="120dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="6dp"
+        android:text="Burger"
+        android:textColor="#020202"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvBugernaem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBurger2" />
+
+    <ImageView
+        android:id="@+id/ivBurger3"
+        android:layout_width="134dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivBurger2"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecommend"
+        app:srcCompat="@drawable/img_3" />
+
+    <TextView
+        android:id="@+id/tvBugernaem"
+        android:layout_width="122dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="16dp"
+        android:text="Burger"
+        android:textColor="#020202"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvBugername"
+        app:layout_constraintTop_toBottomOf="@+id/ivBurger3" />
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="66dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
